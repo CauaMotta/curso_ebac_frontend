@@ -269,3 +269,7 @@ ul li textarea:focus {
 .container-concluidas h3 i {
     color: rgba(255, 255, 255, 0.8);
 }
+
+.concluida {
+    text-decoration: line-through;
+}

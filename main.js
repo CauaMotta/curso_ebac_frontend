@@ -18,10 +18,6 @@ $('document').ready(() => {
         $('.form').slideUp();
     })
 
-    $('#btnDelet').click(() => {
-
-    })
-
     function addNewTarefa(id, desc) {
         tarefa = {
             id: id,
@@ -33,7 +29,6 @@ $('document').ready(() => {
     }
 
     function card(tarefa) {
-        // const ul = document.getElementsByTagName('ul')[0];
         const li = document.createElement('li');
         const divTarefa = document.createElement('div');
 
@@ -79,7 +74,6 @@ $('document').ready(() => {
         divButtons.appendChild(btnEdit);
         divButtons.appendChild(btnDelet);
         li.appendChild(divButtons);
-        // ul.appendChild(li);
         return li;
     }
 
@@ -100,6 +94,7 @@ $('document').ready(() => {
         label.innerHTML = `<i class="fa-solid fa-check"></i>`;
 
         const p = document.createElement('p');
+        p.setAttribute('class', 'concluida');
         p.innerText = `${tarefa.desc}`
 
         divTarefa.appendChild(input);
